@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 40px;
+  box-shadow: 2px 2px 4px lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+header a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.picture {
+  background-image: url("../images/bkg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .picture {
+    margin: 0 80px;
+  }
+}
+.picture h2 {
+  text-align: center;
+  color: gray;
+  font-weight: normal;
+}
+.picture h1 {
+  color: red;
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .picture h1 {
+    border-bottom: 1px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    margin: 0 80px;
+  }
+}
+.services h1 {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+  border-bottom: 1px solid red;
+  margin-top: 10px;
+}
+.services .text {
+  margin: 10px 100px;
+}
+.services .text .no {
+  color: gray;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services .text .yes {
+  color: gray;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .services .text .yes {
+    column-count: 2;
+  }
+}
+.services .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 100px;
+}
+@media (max-width: 768px) {
+  .services .cards {
+    flex-direction: column;
+  }
+}
+.services .cards .item {
+  border: 2px solid blue;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .cards .item h3 {
+  text-align: center;
+  margin: 10px;
+  color: red;
+  text-transform: uppercase;
+}
+.services .cards .item img {
+  border-radius: 50%;
+}
+.services .cards .item p {
+  text-align: center;
+  color: gray;
+  margin: 10px 40px;
+}
+
+.contact {
+  margin: 10px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 10px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .contact img {
+    display: none;
+  }
+}
+.contact h1 {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+  border-bottom: 1px solid red;
+  margin-top: 10px;
+  width: 100%;
+}
+.contact .information {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact label {
+  display: inline-block;
+  width: 100px;
+  color: red;
+}
+.contact .row {
+  margin: 10px;
+}
+.contact textarea {
+  vertical-align: top;
+  border: 1px solid red;
+}
+.contact input {
+  border: 1px solid red;
+}
+.contact button {
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 80px;
+  border: none;
+}
+.contact .row-reverse {
+  display: flex;
+  justify-content: end;
+}
+
+footer {
+  height: 30px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
